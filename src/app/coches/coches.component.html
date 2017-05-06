@@ -32,3 +32,14 @@
         {{ coche.nombre }} - {{ coche.color }} - {{ coche.caballaje }}
     </li>
 </ul>
+
+<br>
+<br>
+<h2>Listado de Artículos:</h2>
+
+<ul *ngIf="articulos">
+    <li *ngFor="let articulo of articulos">
+        {{ articulo.id }} - {{ articulo.title }}
+    </li>
+</ul>
+<span *ngIf="!articulos">Cargando listado...</span>
